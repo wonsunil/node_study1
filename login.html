@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="css/login.css">
+	<script src="js/login.js"></script>
+</head>
+<body>
+	<div id="wrap" class="dis-block">
+		<div id="inputBox">
+			<div class="loginBox">
+				<input type="text" name="id" placeholder="아이디">
+				<input type="password" name="pw" placeholder="비밀번호">
+			</div>
+		</div>
+		<div class="btnBox">
+			<button id="login"><strong>로그인</strong></button>
+			<div>
+				<button id="search-id">아이디 찾기</button>
+				<span>|</span>
+				<button id="search-pw">비밀번호 찾기</button>
+				<span>|</span>
+				<button id="register">회원가입</button>
+			</div>
+		</div>
+	</div>
+	<div id="popup" class="dis-none">
+		<div name="search-id" class="dis-none">
+			<div class="inputBox">
+				<!-- <input type="password" name='pw' placeholder="비밀번호"> -->
+				<div class="email-check dis-none">
+					<li>이메일 형식이 잘못되었습니다!</li>
+					<div class="tri"></div>
+				</div>
+				<input type="text" name="email" placeholder="이메일">
+				<input type="text" name="phone" placeholder="전화번호">
+				<div class="btnBox">
+					<button name="search-id" class="btn"><strong>찾기</strong></button>
+				</div>
+			</div>
+			<button class="close-btn">X</button>
+		</div>
+		<div name="search-pw" class="dis-none">
+			<div class="inputBox">
+				<input type="text" name="email" placeholder="아이디">
+				<div class="email-check dis-none">
+					<li>이메일 형식이 잘못되었습니다!</li>
+					<div id="tri"></div>
+				</div>
+				<input type="text" name="phone" placeholder="이메일">
+				<input type="text" name="phone" placeholder="전화번호">
+				<div id="btnBox">
+					<button name="search-pw" class="btn"><strong>찾기</strong></button>
+				</div>
+			</div>
+			<button class="close-btn">X</button>
+		</div>
+	</div>
+</body>
+</html>

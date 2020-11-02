@@ -1,0 +1,50 @@
+*{ margin: 0; padding: 0; }
+li{ list-style: none; }
+a{ text-decoration: none; color: black; }
+
+/* 헤더 */
+header{
+	width: 80%;
+	height: 80px;
+	display: flex;
+	position: relative;
+	left: 10%;
+}
+
+/* 로고 */
+#logo{
+	width: 150px;
+	height: 80px;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+/* 메뉴 */
+#menu{
+	width: 600px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+.main-menu{
+	width: 150px;
+	height: 80px;
+	float: left;
+	transition: 0.4s;
+	background: lightblue;
+}
+.sub-menu{
+	width: 150px;
+	height: 0px;
+	overflow: hidden;
+	float: left;
+	transition: 0.4s;
+	background: lightblue;
+}
+.main-menu:hover > .sub-menu{ height: 80px; }
+.main-menu:hover, .sub-menu:hover{ background: lightseagreen; transition: 0.4s; }

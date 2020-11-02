@@ -1,0 +1,38 @@
+*{ margin: 0; padding: 0; }
+body > div{ display: inline-block; }
+
+#wrap{
+	width: 100vw;
+	height: 100vh;
+	background: #DEDEDE;
+}
+#header{
+	width: 100%;
+	height: 100px;
+}
+#logo{
+	width: 150px;
+	height: 100%;
+}
+#menu{
+	width: 150px;
+	height: 100%;
+}
+#info{
+	width: 90%;
+	height: 80%;
+	border: 1px solid black;
+	box-sizing: border-box;
+	margin-left: 5%;
+	list-style: none;
+}
+#imgBox{
+	width: 150px;
+	height: 150px;
+}
+#imgBox > img{ width: 100%; height: 100%; }
+#info > button {
+	margin-right: 15px;
+	float: left;
+}
+#user-list{ display: none; }
